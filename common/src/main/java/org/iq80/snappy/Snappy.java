@@ -30,7 +30,11 @@ public final class Snappy
     {
         return SnappyDecompressor.getUncompressedLength(compressed, compressedOffset);
     }
-
+    public static byte[] uncompress(byte[] compressed)
+            throws CorruptionException
+    {
+        return SnappyDecompressor.uncompress(compressed, 0, compressed.length);
+    }
     public static byte[] uncompress(byte[] compressed, int compressedOffset, int compressedSize)
             throws CorruptionException
     {

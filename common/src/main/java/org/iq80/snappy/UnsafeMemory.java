@@ -21,7 +21,7 @@ import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
 
-class UnsafeMemory implements Memory
+public class UnsafeMemory implements Memory
 {
     private static final Unsafe unsafe;
 

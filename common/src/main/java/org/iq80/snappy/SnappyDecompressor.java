@@ -21,7 +21,7 @@ import static org.iq80.snappy.SnappyInternalUtils.copyLong;
 import static org.iq80.snappy.SnappyInternalUtils.loadByte;
 import static org.iq80.snappy.SnappyInternalUtils.lookupShort;
 
-final class SnappyDecompressor
+public final class SnappyDecompressor
 {
     private static final int MAX_INCREMENT_COPY_OVERFLOW = 20;
 

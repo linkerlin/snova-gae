@@ -17,7 +17,7 @@
  */
 package org.iq80.snappy;
 
-final class SnappyInternalUtils
+public final class SnappyInternalUtils
 {
     private SnappyInternalUtils()
     {

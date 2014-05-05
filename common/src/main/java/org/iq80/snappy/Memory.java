@@ -17,7 +17,7 @@
  */
 package org.iq80.snappy;
 
-interface Memory
+public interface Memory
 {
     boolean fastAccessSupported();
 

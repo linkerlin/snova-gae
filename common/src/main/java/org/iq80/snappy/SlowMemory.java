@@ -17,7 +17,7 @@
  */
 package org.iq80.snappy;
 
-class SlowMemory implements Memory
+public class SlowMemory implements Memory
 {
     @Override
     public boolean fastAccessSupported()

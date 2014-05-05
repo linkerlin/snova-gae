@@ -1,19 +1,17 @@
 package org.arch.compress;
 
-import static org.junit.Assert.assertArrayEquals;
+import org.arch.compress.fastlz.JFastLZ;
+import org.arch.compress.fastlz.JFastLZLevel;
+import org.arch.compress.lzf.LZFDecoder;
+import org.arch.compress.lzf.LZFEncoder;
+import org.arch.compress.quicklz.QuickLZ;
+import org.iq80.snappy.Snappy;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.arch.compress.fastlz.JFastLZ;
-import org.arch.compress.fastlz.JFastLZLevel;
-import org.arch.compress.jsnappy.SnappyBuffer;
-import org.arch.compress.jsnappy.SnappyCompressor;
-import org.arch.compress.jsnappy.SnappyDecompressor;
-import org.arch.compress.lzf.LZFDecoder;
-import org.arch.compress.lzf.LZFEncoder;
-import org.arch.compress.quicklz.QuickLZ;
-import org.junit.Test;
+import static org.junit.Assert.assertArrayEquals;
 
 public class CompressTest
 {
@@ -88,10 +86,10 @@ public class CompressTest
 		assertArrayEquals(cmp, resume);
 	}
 
-	// @Test
+	@Test
 	public void testSnappy() throws IOException
 	{
-		InputStream fis = getClass().getResourceAsStream("sina.htm");
+		InputStream fis = getClass().getResourceAsStream("/sina.htm");
 		byte[] buffer = new byte[1024 * 1024];
 		int len = fis.read(buffer);
 		byte[] cmp = new byte[len];
@@ -102,23 +100,23 @@ public class CompressTest
 
 		for (int i = 0; i < loopcount; i++)
 		{
-			SnappyBuffer afterCompress = SnappyCompressor.compress(cmp);
+			byte[] afterCompress = Snappy.compress(cmp);
 		}
 		long end = System.currentTimeMillis();
-		SnappyBuffer afterCompress = SnappyCompressor.compress(cmp);
+		byte[] afterCompress = Snappy.compress(cmp);
 		System.out.println("Snappy Compressed size:"
-		        + afterCompress.getLength() + " for uncompressed size:" + len
+		        + afterCompress.length + " for uncompressed size:" + len
 		        + ", cost " + (end - start) + "ms");
 		start = System.currentTimeMillis();
 		for (int i = 0; i < loopcount; i++)
 		{
-			SnappyBuffer resume = SnappyDecompressor.decompress(afterCompress);
+			byte[] resume = Snappy.uncompress(afterCompress);
 		}
 
 		end = System.currentTimeMillis();
-		SnappyBuffer resume = SnappyDecompressor.decompress(afterCompress);
+		byte[] resume = Snappy.uncompress(afterCompress);
 		System.out.println("Snappy Decompress cost " + (end - start) + "ms");
-		assertArrayEquals(cmp, resume.toByteArray());
+		assertArrayEquals(cmp, resume);
 		// Snappy.compress(uncompressed, uncompressedOffset, uncompressedLength,
 		// compressed, compressedOffset)
 	}
@@ -126,7 +124,7 @@ public class CompressTest
 	@Test
 	public void testQuickLZ() throws IOException
 	{
-		InputStream fis = getClass().getResourceAsStream("sina.htm");
+		InputStream fis = getClass().getResourceAsStream("/sina.htm");
 		byte[] buffer = new byte[1024 * 1024];
 		int len = fis.read(buffer);
 		byte[] cmp = new byte[len];
