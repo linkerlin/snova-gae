@@ -3,8 +3,8 @@
 <project name="snova-gae" default="packageserver">
 	<property name="root" value="." />
 
-	<property name='warlib' value='${root}/war/WEB-INF/lib' />
-	<property name='serverclass' value='${root}/war/WEB-INF/classes' />
+	<property name='warlib' value='src/main/webapp/WEB-INF/lib' />
+	<property name='serverclass' value='src/main/webapp/WEB-INF/classes' />
 	<property name="srcroot" value="${root}/src" />
 	<property name="deploysrc" value="${root}/deploy/src" />
 	<property name="deploylib" value="${root}/deploy/lib" />
@@ -79,7 +79,7 @@
 		<mkdir dir="${releaseserverdir}/war" />
 		<mkdir dir="${releaseserverdir}/deploy" />
 		<copy todir="${releaseserverdir}/war">
-			<fileset dir="${root}/war">
+			<fileset dir="src/main/webapp">
 				<exclude name="**/images/**" />
 				<exclude name="**/appengine-jsr*.jar" />
 				<exclude name="**/datanucleus*.jar" />
