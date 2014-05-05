@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+<project name="snova-framework" default="release">
+	<property name="root" value="." />
+
+	<property name="srcroot" value="${root}/src" />
+	<property name="releasedir" value="${root}/release" />
+	<property name="classes" value="${root}/build" />
+	<property name="jar" value="snova.jar" />
+	<property name="common-jar" value="snova-common.jar" />
+	<property name="distroot" value="${root}/lib" />
+	<property name="docdir" value="${root}/doc" />
+	<property name="lib" value="${root}/lib" />
+	<property name="conf" value="${root}/conf" />
+	<property name="docs" value="${root}/docs" />
+	<property name="shell" value="${root}/shell" />
+	<property name="release" value="release" />
+	<property name="version" value="0.22.0" />
+	<property name="versionfile" value="org/snova/framework/common/Version.java" />
+	<property name="project_name" value="snova" />
+	<property name="releasename" value="${project_name}-${version}" />
+
+	<target name="prepare">
+		<mkdir dir="${classes}" />
+		<mkdir dir="${distroot}" />
+		<!-- <copy todir="${srcroot}/com/hyk/proxy/framework/shell/gui"> <fileset 
+			dir="${root}/../hyk-proxy-gui/src/com/hyk/proxy/framework/shell/gui" includes="**/*.java"/> 
+			</copy> -->
+		<echo
+			message="package org.snova.framework.common;
+			 public class Version
+			 {
+			   public static final String value = &quot;${version}&quot;;
+			 }"
+			file="${srcroot}/${versionfile}" />
+	</target>
+
+	<target name="compile" depends="prepare">
+		<javac debug="on" destdir="${classes}" target="1.5" source="1.5">
+			<src path="${srcroot}" />
+			<classpath>
+				<fileset dir="${lib}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+		<copy todir="${classes}">
+			<fileset dir="${srcroot}">
+				<include name="**/*.png" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="common-jar" depends="compile">
+		<jar destfile="${distroot}/${common-jar}">
+			<fileset dir="${classes}">
+				<include name="org/snova/framework/common/**/*.class" />
+				<include name="org/snova/framework/event/**/*.class" />
+			</fileset>
+		</jar>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${distroot}/${jar}" basedir="${classes}">
+			<manifest>
+				<attribute name="Version" value="${version}" />
+				<attribute name="Main-Class"
+					value="org.snova.framework.launch.ApplicationLauncher" />
+				<attribute name="Class-Path"
+					value="../conf  
+					arch.jar jboss-netty.jar bcprov-jdk16-146.jar httpclient.jar
+					slf4j-api-1.6.4.jar slf4j-jdk14-1.6.4.jar" />
+			</manifest>
+		</jar>
+		<delete dir="${classes}" />
+	</target>
+
+	<target name="release" depends="jar">
+		<property name="binreleasedir" value="${releasedir}/${releasename}" />
+		<delete file="${lib}/jboss-netty.jar" />
+		<jar destfile="${lib}/jboss-netty.jar">
+			<zipfileset src="${lib}/netty-3.6.0.Final.jar">
+				<exclude name="org/jboss/netty/container/**" />
+				<exclude name="org/jboss/netty/handler/codec/compression/**" />
+				<exclude name="org/jboss/netty/handler/codec/protobuf/**" />
+				<exclude name="org/jboss/netty/handler/codec/rtsp/**" />
+				<exclude name="org/jboss/netty/handler/codec/spdy/**" />
+				<exclude name="org/jboss/netty/handler/codec/embedder/**" />
+				<exclude name="org/jboss/netty/handler/codec/serialization/**" />
+				<exclude name="org/jboss/netty/handler/codec/http/websocketx/**" />
+				<exclude name="org/jboss/netty/handler/timeout/**" />
+				<exclude name="org/jboss/netty/channel/socket/http/**" />
+				<exclude name="org/jboss/netty/util/internal/jzlib/**" />
+				<exclude name="org/jboss/netty/handler/ipfilter/**" />
+				<exclude name="org/jboss/netty/handler/traffic/**" />
+			</zipfileset>
+		</jar>
+		<mkdir dir="${binreleasedir}" />
+		<mkdir dir="${binreleasedir}/spac" />
+		<mkdir dir="${binreleasedir}/cert" />
+		<mkdir dir="${binreleasedir}/log" />
+		<copy todir="${binreleasedir}/lib">
+			<fileset dir="${lib}">
+				<exclude name="netty-3.6.0.Final.jar" />
+				<exclude name="snova-common.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${binreleasedir}/conf">
+			<fileset dir="${conf}">
+				<exclude name="*.json" />
+				<exclude name="*.txt" />
+				<exclude name="*.cer" />
+				<exclude name="*.kst" />
+			</fileset>
+		</copy>
+		<copy todir="${binreleasedir}/spac">
+			<fileset dir="${conf}">
+				<include name="*.json" />
+				<include name="*.txt" />
+			</fileset>
+		</copy>
+		<copy todir="${binreleasedir}/cert">
+			<fileset dir="${conf}">
+				<include name="*.cer" />
+				<include name="*.kst" />
+			</fileset>
+		</copy>
+		<copy todir="${binreleasedir}/bin">
+			<fileset dir="${shell}" />
+		</copy>
+		<copy todir="${binreleasedir}" file="${root}/readme.txt" />
+		<copy todir="${binreleasedir}" file="${root}/changelog.txt" />
+		<copy todir="${binreleasedir}" file="${root}/licence.txt" />
+		<zip destfile="${releasename}.zip" basedir="${releasedir}" />
+		<delete dir="${releasedir}" />
+	</target>
+</project>

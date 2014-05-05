@@ -6,7 +6,7 @@
     <version>1.0</version>
 
     <groupId>io.github.linkerlin</groupId>
-    <artifactId>snova-maven</artifactId>
+    <artifactId>snova-server</artifactId>
 
     <properties>
         <appengine.target.version>1.8.8</appengine.target.version>

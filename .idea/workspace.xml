@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2eb6dcb3-d75c-4ef8-820c-563bea0726bf" name="Default" comment="init">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/RootKeyStore.kst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/about.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/appEngine-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/appEngine-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/arch.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/bcprov-jdk16-146.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/busy-icon9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/configure.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/disable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/exit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/flag-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/flag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/httpclient.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/busyicons/idle-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/install.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/modify.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/netty-3.6.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/player_play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/player_stop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/plugins-icon-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/plugins-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/remove.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/slf4j-api-1.6.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/slf4j-jdk14-1.6.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/target/snova-maven-1.0.war" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/speaker-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/resources/images/update.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/gae/AdminResponseEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/launch/ApplicationLauncher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/ArraysHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/gae/AuthRequestEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/gae/AuthResponseEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/AvalablePluginPanel.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/AvalablePluginPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/BNDM.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/BNDMCI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/BNDMWildcards.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/BNDMWildcardsCI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/misc/crypto/base64/Base64.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/BoyerMooreHorspool.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/BoyerMooreHorspoolRaita.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/buffer/Buffer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/buffer/BufferHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/buffer/BufferHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/BufferRecycler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/C4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/C4Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/gae/C4GUIHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/C4RemoteHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/C4ServerAuth.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/CharIntMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/lzf/ChunkEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/buffer/CodecObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/CommonEventConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/CommonEvents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/exception/CommunicationException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/misc/CompressEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/misc/CompressEventV2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/compress/CompressTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/misc/CompressorType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/exception/ConfigurationException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/Constants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/http/ContentRangeHeaderValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/CorruptionException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/Crc32C.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/CumulateReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/DnsClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/DnsName.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/misc/EncryptEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/misc/EncryptEventV2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/misc/EncryptType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/Event.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventDispatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/EventHeaderTags.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/EventHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventRefelctHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventSegment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/EventVersion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/Fake-ACRoot-Certificate.cer" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/FileHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/util/FileHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/FileManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/forward/ForwardRemoteHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/forward/ForwardRemoteProxyManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/FrameworkConfigDialog.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/FrameworkConfigDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/gae/GAE.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/gae/GAEConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/gae/GAEGUIHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/gae/GAERemoteHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/gae/GAEServerAuth.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/filter/GFWList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/filter/gfwlist/GFWListRule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/misc/gfw/GFWListTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/google/Google.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/google/GoogleConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/google/GoogleRemoteHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/http/HTTPChunkEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/http/HTTPConnectionEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/http/HTTPErrorEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/http/HTTPEventContants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/http/HTTPMessageEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/http/HTTPRequestEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/http/HTTPResponseEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/Header.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/filter/gfwlist/HostUrlWildcardRule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/hosts/HostsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/http/HttpHeaderValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/http/HttpServerAddress.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/http/HttpTunnelService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/ws/IOWorker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/ImageUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/config/IniProperties.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/InstalledPluginPanel.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/InstalledPluginPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/exception/InvalidNameException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/filter/IsHostCNIP.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/fastlz/JFastLZ.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/fastlz/JFastLZLevel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/fastlz/JFastLZPack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/fastlz/JFastLZUnpack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/json/JSONArray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/json/JSONException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/json/JSONObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/json/JSONString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/json/JSONStringer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/json/JSONTokener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/json/JSONWriter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/classloader/JarClassLoader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/classloader/JarClassLoaderPath.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/common/KeyValuePair.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/lzf/LZFChunk.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/lzf/LZFDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/lzf/LZFEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/lzf/LZFInputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/lzf/LZFOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/ListSelector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/LocalProxyHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/MainFrame.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/MainFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_8_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__com_google_appengine_appengine_api_stubs_1_8_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__com_google_appengine_appengine_endpoints_1_8_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__com_google_appengine_appengine_testing_1_8_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__com_google_appengine_orm_datanucleus_appengine_2_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__javax_jdo_jdo_api_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__net_sf_jsr107cache_jsr107cache_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__org_datanucleus_datanucleus_api_jdo_3_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__org_datanucleus_datanucleus_core_3_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__org_datanucleus_datanucleus_enhancer_3_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__org_ow2_asm_asm_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/Memory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/MiscHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/MismatchSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/range/MultiRangeFetchTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/exception/NameNotFoundException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/NamedEventHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/exception/NamingException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/NetworkHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/exception/OperationNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/common/Pair.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/misc/logging/PatternJDKLoggingFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/PluginConfigDialog.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/PluginConfigDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/PreferenceHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/PropertiesHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/util/PropertiesHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/ProxyGUIHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/server/ProxyHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/proxy/ProxyInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/server/ProxyServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/server/ProxyServerType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/proxy/ProxyType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/http/PullWorker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/http/PushWorker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/compress/quicklz/QuickLZ.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/encrypt/RC4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/RandomHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/util/RandomHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/range/RangeCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/common/RangeChunk.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/common/RangeFetchStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/http/RangeHeaderValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/ReflectHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/ReloadableFileMonitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/ReloadableFileMonitorManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/RemoteProxyHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/RemoteProxyManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/RemoteProxyManagerHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/gae/RequestSharedAppIDEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/gae/RequestSharedAppIDResultEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/ResolveOptions.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/Resolver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/ResourceRecord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/ResourceRecords.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/SPAC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/gae/SSHGUIHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/dns/exception/ServiceUnavailableException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/http/SetCookieHeaderValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/gae/ShareAppIDEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/SharedObjectHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/ShiftOrMismatches.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/encrypt/SimpleEncrypt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/http/SimpleNameValueListHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/SlowMemory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/Snappy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/SnappyCompressor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/SnappyDecompressor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/SnappyInputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/SnappyInternalUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/SnappyOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/Snova.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/config/SnovaConfiguration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/socket/SocketCloseEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/socket/SocketConnectEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/SocketConnectionEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/socket/SocketDataEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/socket/SocketEventContants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/SocketReadEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksAuthRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksAuthRequestDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksAuthResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksAuthResponseDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksCmdRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksCmdRequestDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksCmdResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksCmdResponseDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksCommonUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksInitRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksInitRequestDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksInitResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksInitResponseDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/SocksResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/SpacConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/filter/SpacFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/gae/SpacGUIHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/SpacRule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/util/SslCertificateHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/StringHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/util/StringHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/StringSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/SwingHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/shell/swing/SysTray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/TCPChunkEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/trace/TUITrace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/trace/Trace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/event/TypeVersion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/UnknownSocksMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/UnknownSocksRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/io/netty/handler/codec/socks/UnknownSocksResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/iq80/snappy/UnsafeMemory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/filter/gfwlist/UrlRegexRule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/spac/filter/gfwlist/UrlWildcardRule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/event/UserLoginEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/common/Version.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/main/java/org/snova/framework/proxy/c4/ws/WSTunnelService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/target/generated-sources/appengine-endpoints/WEB-INF/appengine-web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/cloud_hosts.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/cloud_spac.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/copying.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/misc/gfw/gfwlist.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/licence.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/logging.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/arch/util/stringsearch/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/test/java/org/arch/compress/sina.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/snova-gfwlist.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/snova.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/artifacts/snova_maven_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/artifacts/snova_maven_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/snova_server_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/snova_server_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/shell/start.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/shell/start.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/shell/startgui.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/shell/startgui.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/user-gfwlist.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/user_hosts.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/conf/user_spac.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/target/generated-sources/appengine-endpoints/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/VERSION" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/appcfg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/fancy_urllib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/appinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/appinfo_errors.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/appinfo_includes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/backendinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/dispatchinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/pagespeedinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/validation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/yaml_builder.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/yaml_errors.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/yaml_listener.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/api/yaml_object.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/tools/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/tools/appcfg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/tools/appengine_rpc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/google/appengine/tools/appengine_rpc_httplib2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/composer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/constructor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/cyaml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/dumper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/emitter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/error.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/events.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/loader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/nodes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/reader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/representer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/resolver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/scanner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/serializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/appcfg/yaml/tokens.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/deployer.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/deployer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/app.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/backends.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/CONTRIBUTORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/snappy/decode.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/snappy/encode.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/snappy/snappy.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/code.google.com/p/snappy-go/snappy/snappy_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/cron.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/entry/entry.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/appid.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/auth.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/c4.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/compress.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/encrypt.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/event.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/factory.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/http.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/event/types.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/misc/constants.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/misc/version.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/service/common.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/service/config.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/service/dispatch.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/service/fetch.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/service/master.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/service/tunnel.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/snova.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/util/container.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/util/http.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/util/ini.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/util/net.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/go/src/util/se1.go" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/pom.xml" afterPath="$PROJECT_DIR$/server/pom.xml" />
+    </list>
+    <ignored path="snova-parent.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties converted="true" />
+    <breakpoint_any converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="snova-parent" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44461778" vertical-offset="0" max-vertical-offset="3540">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../WalnutiQ" value="1397788703000" />
+        <entry key="$USER_HOME$/gits/WalnutiQ" value="1399184885000" />
+      </map>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="774" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="2" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snova-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snova-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snova-gae" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snova-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snova-gae" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.scala.compiler.ScalaApplicationSettingsForm" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="snova-client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="snova-client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="snova-client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="snova-client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="snova-client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="snova-client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="snova-client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2eb6dcb3-d75c-4ef8-820c-563bea0726bf" name="Default" comment="" />
+      <created>1399268567944</created>
+      <updated>1399268567944</updated>
+      <workItem from="1399268571590" duration="15000" />
+      <workItem from="1399268596323" duration="328000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="343000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44461778" vertical-offset="0" max-vertical-offset="3540">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>snova-server:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.2.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>snova-parent</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20000002" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/client/snova-client.iml" filepath="$PROJECT_DIR$/client/snova-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/snova-common.iml" filepath="$PROJECT_DIR$/common/snova-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snova-parent.iml" filepath="$PROJECT_DIR$/snova-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/snova-server.iml" filepath="$PROJECT_DIR$/server/snova-server.iml" />
+    </modules>
+  </component>
+</project>
+

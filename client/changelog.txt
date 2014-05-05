@@ -1,0 +1,155 @@
+Snova Changelog
+===================
+Changes in version 0.22.0(2013.03.09)
+-------------------------------------------
+** Improvement
+   * Bug fix
+
+Changes in version 0.21.0(2013.03.09)
+-------------------------------------------
+** Features
+   * Add multi range fetch support for C4
+   * C4 Server performance improvement
+   
+** Improvement
+   * Bug fix
+      
+** Task
+   * NA
+
+Changes in version 0.20.3(2013.02.20)
+-------------------------------------------
+** Features
+   * Add specific app binding for SPAC rules
+   * Server performance improvement
+   
+** Improvement
+   * NA
+      
+** Task
+   * NA
+
+
+Changes in version 0.20.0(2013.02.05)
+-------------------------------------------
+** Features
+   * Rebuild, port features from gsnova.
+   
+** Improvement
+   * NA
+      
+** Task
+   * NA
+
+Changes in version 0.19.0(2012.11.23)
+-------------------------------------------
+** Features
+   * New C4
+   
+** Improvement
+   * Upgrade C4/SPAC plugins
+      
+** Task
+   * NA
+
+
+Changes in version 0.15.0(2012.08.18)
+-------------------------------------------
+** Features
+   * 
+   
+** Improvement
+   * Upgrade C4/SPAC plugins
+      
+** Task
+   * NA
+
+Changes in version 0.14.0(2012.06.16)
+-------------------------------------------
+** Features
+   * 
+   
+** Improvement
+   * Upgrade plugins to 0.14.0
+      
+** Task
+   * NA
+
+Changes in version 0.13.0(2012.04.09)
+-------------------------------------------
+** Features
+   * 
+   
+** Improvement
+   * Upgrade plugins to 0.13.0
+      
+** Task
+   * NA
+
+Changes in version 0.12.0204
+-------------------------------------------
+** Features
+   * Change config file format from XML to plain text
+   * Reload modified config file automatically
+   
+** Improvement
+   * Faster GUI launch
+
+      
+** Task
+   * NA
+
+Changes in version 0.12.0120
+-------------------------------------------
+** Features
+   * New Plugin:C4, support PaaS services Heroku/Cloundfoundry/Openshift/Jelastic
+   * Remove heroku plugin
+   
+** Improvement
+   * Upgrade gae plugin to 0.12.0120
+   * Upgrade spac plugin to 0.12.0120
+      
+** Task
+   * NA
+   
+Changes in version 0.12.0107(2012.01.07)
+-------------------------------------------
+** Features
+   * NA
+   
+** Improvement
+   * Upgrade gae plugin to 0.12.0107
+      
+** Task
+   * NA
+
+Changes in version 0.12.0101(2012.01.01)
+-------------------------------------------
+** Features
+   * New Plugin:Heroku
+   * New Plugin:SPAC
+   * Auto refresh changed configuration
+   
+** Improvement
+   * Store created faked SSL cert file
+      
+** Task
+   * NA
+
+Changes in version 0.11.1111(2011.11.11)
+-------------------------------------------
+Initial version
+
+** Features
+   * Plugin system
+   * Event driven framework
+   * Console admin tool
+   * Simple local hosts mapping configuration
+   * GAE support
+      
+** Task
+   * NA
+
+
+
+

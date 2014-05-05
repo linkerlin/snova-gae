@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="snova-server:war exploded">
+    <output-path>$PROJECT_DIR$/server/target/snova-server-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="snova-server/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="snova-server" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
