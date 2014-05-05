@@ -4,12 +4,10 @@
  *
  * Description: CompressEvent.java 
  *
- * @author yinqiwen [ 2011-12-3 | ÏÂÎç02:09:00 ]
+ * @author yinqiwen
  *
  */
 package org.arch.event.misc;
-
-import java.io.IOException;
 
 import org.arch.buffer.Buffer;
 import org.arch.buffer.BufferHelper;
@@ -17,12 +15,10 @@ import org.arch.compress.fastlz.JFastLZ;
 import org.arch.compress.lzf.LZFDecoder;
 import org.arch.compress.lzf.LZFEncoder;
 import org.arch.compress.quicklz.QuickLZ;
-import org.arch.event.Event;
-import org.arch.event.EventConstants;
-import org.arch.event.EventDispatcher;
-import org.arch.event.EventType;
-import org.arch.event.EventVersion;
+import org.arch.event.*;
 import org.iq80.snappy.Snappy;
+
+import java.io.IOException;
 
 /**
  *

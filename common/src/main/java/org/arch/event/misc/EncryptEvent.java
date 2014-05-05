@@ -4,7 +4,7 @@
  *
  * Description: EncryptEvent.java 
  *
- * @author yinqiwen [ 2011-12-3 | обнГ02:13:29 ]
+ * @author yinqiwen
  *
  */
 package org.arch.event.misc;

@@ -4,20 +4,15 @@
  *
  * Description: Main.java 
  *
- * @author yinqiwen [ 2010-8-29 | обнГ05:02:48 ]
+ * @author yinqiwen
  *
  */
 package org.arch.dns;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.Arrays;
-
 import org.arch.dns.exception.NamingException;
+
+import java.io.IOException;
+import java.util.Arrays;
 
 
 /**
