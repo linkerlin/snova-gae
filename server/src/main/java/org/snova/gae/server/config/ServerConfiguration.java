@@ -85,7 +85,7 @@ public class ServerConfiguration
         }
         for (String rule : blacklist)
         {
-            if (host.indexOf(rule) != -1)
+            if (host.contains(rule))
             {
                 return true;
             }
@@ -98,7 +98,7 @@ public class ServerConfiguration
         type = type.toLowerCase();
         for (String filter : compressFilter)
         {
-            if (type.indexOf(filter) != -1)
+            if (type.contains(filter))
             {
                 return true;
             }

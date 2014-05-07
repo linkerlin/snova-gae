@@ -48,6 +48,7 @@ public class ServerEventHandler implements EventHandler
 		{
 			logger.error("Failed to find registry type&version for class:"
 			        + event.getClass().getName());
+            return null;
 		}
 		int type = tv.type;
 		switch (type)
