@@ -266,7 +266,7 @@ public class SslCertificateHelper
 		File fakeSslFile = getFakeSSLCertFile(host);
 		InputStream is = fakeSslFile.exists() ? new FileInputStream(fakeSslFile)
 		        : null;
-		//System.out.println("####" + fakeSslFile.getAbsolutePath());
+		System.out.println("####" + fakeSslFile.getAbsolutePath());
 		ks.load(is, null == is ? null : KS_PASS.toCharArray());
 
 		if (null == is)

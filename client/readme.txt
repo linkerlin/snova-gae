@@ -23,6 +23,7 @@ Dependencies
 Installing
 ----------
  Just unzip snova-[version].zip.
+ Import "Fake-ACRoot-Certificate.cer" to KeyChain(MacOSX) or Firefox Browser(If you use it)
 
 Running
 -------

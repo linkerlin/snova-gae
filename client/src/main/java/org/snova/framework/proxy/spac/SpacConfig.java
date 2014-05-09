@@ -44,14 +44,14 @@ public class SpacConfig
 	{
 		try
 		{
-            System.out.println("cloud_spac:"+new File("conf/"+"cloud_spac.json").getAbsolutePath());
+            System.out.println("cloud_spac:"+new File("spac/"+"cloud_spac.json").getAbsolutePath());
 			String cloudSpacContent = FileHelper.readEntireFile(new File(
-			        "conf/"+"cloud_spac.json"));
+			        "spac/"+"cloud_spac.json"));
 			String userPostSpacContent = FileHelper.readEntireFile(new File(
-			        "conf/"+"user_spac.json"));
+			        "spac/"+"user_spac.json"));
 
 			ArrayList<SpacRule> rules = new ArrayList<SpacRule>();
-			File usePreRule = new File("conf/"+"user_pre_spac.json");
+			File usePreRule = new File("spac/"+"user_pre_spac.json");
 			if (usePreRule.exists())
 			{
 				String userPreSpacContent = FileHelper
