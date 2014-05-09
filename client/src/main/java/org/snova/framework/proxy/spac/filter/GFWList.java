@@ -3,14 +3,11 @@
  */
 package org.snova.framework.proxy.spac.filter;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.ArrayList;
-
 import org.arch.config.IniProperties;
-import org.jboss.netty.handler.codec.http.HttpHeaders;
+import org.jboss.netty.handler.codec.http.DefaultHttpRequest;
+import org.jboss.netty.handler.codec.http.HttpMethod;
 import org.jboss.netty.handler.codec.http.HttpRequest;
+import org.jboss.netty.handler.codec.http.HttpVersion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
@@ -19,6 +16,11 @@ import org.snova.framework.proxy.spac.filter.gfwlist.HostUrlWildcardRule;
 import org.snova.framework.proxy.spac.filter.gfwlist.UrlRegexRule;
 import org.snova.framework.proxy.spac.filter.gfwlist.UrlWildcardRule;
 import org.snova.framework.util.FileManager;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.ArrayList;
 
 /**
  * @author yinqiwen
@@ -41,6 +43,10 @@ public class GFWList extends SpacFilter
 	{
 		return instance;
 	}
+
+    public boolean isBlockedByGFW(String url){
+        return filter(new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, url));
+    }
 	
 	@Override
 	public boolean filter(HttpRequest req)

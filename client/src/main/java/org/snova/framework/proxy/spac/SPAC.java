@@ -1,24 +1,15 @@
 package org.snova.framework.proxy.spac;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Map;
-
 import org.arch.config.IniProperties;
 import org.arch.misc.crypto.base64.Base64;
 import org.arch.util.ArraysHelper;
 import org.arch.util.NetworkHelper;
-import org.jboss.netty.handler.codec.http.DefaultHttpResponse;
-import org.jboss.netty.handler.codec.http.HttpHeaders;
-import org.jboss.netty.handler.codec.http.HttpRequest;
-import org.jboss.netty.handler.codec.http.HttpResponseStatus;
-import org.jboss.netty.handler.codec.http.HttpVersion;
+import org.jboss.netty.handler.codec.http.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
 import org.snova.framework.proxy.RemoteProxyManager;
 import org.snova.framework.proxy.RemoteProxyManagerHolder;
-import org.snova.framework.proxy.c4.C4;
 import org.snova.framework.proxy.forward.ForwardRemoteProxyManager;
 import org.snova.framework.proxy.gae.GAE;
 import org.snova.framework.proxy.hosts.HostsService;
@@ -29,6 +20,9 @@ import org.snova.framework.server.ProxyServerType;
 import org.snova.framework.util.FileManager;
 import org.snova.framework.util.MiscHelper;
 import org.snova.framework.util.SharedObjectHelper;
+
+import java.io.IOException;
+import java.util.Map;
 
 public class SPAC
 {
@@ -133,10 +127,7 @@ public class SPAC
 			{
 				return new RemoteProxyManager[] { new GAE.GAERemoteProxyManager() };
 			}
-			case C4:
-			{
-				return new RemoteProxyManager[] { new C4.C4RemoteProxyManager() };
-			}
+
 			default:
 			{
 				break;

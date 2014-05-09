@@ -11,12 +11,12 @@
     </parent>
     <groupId>io.github.linkerlin</groupId>
     <artifactId>snova-client</artifactId>
-    <packaging>jar</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <name>Snova Client</name>
+    <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java-version>1.7</java-version>
+        <java-version>1.6</java-version>
         <org.springframework-version>4.0.3.RELEASE</org.springframework-version>
         <org.springframework.security-version>3.2.3.RELEASE</org.springframework.security-version>
         <org.aspectj-version>1.7.4</org.aspectj-version>
@@ -70,6 +70,40 @@
             <artifactId>snova-common</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>io.github.linkerlin</groupId>-->
+            <!--<artifactId>snova</artifactId>-->
+            <!--<version>1.0.0</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/lib/snova.jar</systemPath>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.ning</groupId>-->
+            <!--<artifactId>async-http-client</artifactId>-->
+            <!--<version>1.8.8</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk16</artifactId>
+            <version>1.46</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+            <version>3.6.8.Final</version>
+        </dependency>
+
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -256,6 +290,38 @@
     </dependencies>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.dstovall</groupId>
+                <artifactId>onejar-maven-plugin</artifactId>
+                <version>1.4.4</version>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <mainClass>
+                                org.snova.framework.launch.ApplicationLauncher
+                            </mainClass>
+                            <!-- Optional -->
+                            <onejarVersion>0.97</onejarVersion>
+                            <!-- Optional, use only if you need to include native libraries (dll's) -->
+                            <!--<binlibs>-->
+                            <!--<fileSet>-->
+                            <!--<directory>${project.build.directory}/dllextract</directory>-->
+                            <!--<includes>-->
+                            <!--<include>test.dll</include>-->
+                            <!--</includes>-->
+                            <!--</fileSet>-->
+                            <!--</binlibs>-->
+                            <!-- Optional, default is false -->
+                            <attachToBuild>true</attachToBuild>
+                            <!-- Optional, default is "onejar" -->
+                            <classifier>onejar</classifier>
+                        </configuration>
+                        <goals>
+                            <goal>one-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>

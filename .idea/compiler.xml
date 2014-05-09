@@ -27,6 +27,12 @@
         <module name="snova-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="snova-client" target="1.6" />
+      <module name="snova-common" target="1.7" />
+      <module name="snova-parent" target="1.7" />
+      <module name="snova-server" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

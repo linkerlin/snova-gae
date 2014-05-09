@@ -3,12 +3,8 @@
  */
 package org.snova.framework.server;
 
-import java.net.InetSocketAddress;
-import java.util.concurrent.Executors;
-
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.Channel;
-import org.jboss.netty.channel.ChannelFuture;
 import org.jboss.netty.channel.ChannelPipeline;
 import org.jboss.netty.channel.ChannelPipelineFactory;
 import org.jboss.netty.channel.Channels;
@@ -17,8 +13,9 @@ import org.jboss.netty.handler.codec.http.HttpRequestDecoder;
 import org.jboss.netty.handler.codec.http.HttpResponseEncoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.snova.framework.util.SharedObjectHelper;
-import org.snova.http.client.common.SimpleSocketAddress;
+
+import java.net.InetSocketAddress;
+import java.util.concurrent.Executors;
 
 /**
  * @author yinqiwen
@@ -32,11 +29,9 @@ public class ProxyServer
 	private ServerBootstrap	bootstrap	= new ServerBootstrap();
 	private Channel	        server	  = null;
 	
-	public ProxyServer(SimpleSocketAddress listenAddress,
+	public ProxyServer(InetSocketAddress listenAddress,
 	        final ProxyServerType type)
 	{
-		String host = listenAddress.host;
-		int port = listenAddress.port;
 		bootstrap = new ServerBootstrap(new NioServerSocketChannelFactory(
 		        Executors.newCachedThreadPool(),
 		        Executors.newCachedThreadPool()));
@@ -54,7 +49,7 @@ public class ProxyServer
 		});
 		
 		// Bind and start to accept incoming connections.
-		bootstrap.bind(new InetSocketAddress(host, port));
+		bootstrap.bind(listenAddress);
 	}
 	
 	public void close()

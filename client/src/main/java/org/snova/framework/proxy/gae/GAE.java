@@ -1,9 +1,5 @@
 package org.snova.framework.proxy.gae;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import org.arch.event.Event;
 import org.arch.event.EventHandler;
 import org.arch.event.EventHeader;
@@ -12,16 +8,14 @@ import org.arch.util.StringHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.event.CommonEventConstants;
-import org.snova.framework.event.CommonEvents;
-import org.snova.framework.event.gae.AdminResponseEvent;
-import org.snova.framework.event.gae.AuthRequestEvent;
-import org.snova.framework.event.gae.AuthResponseEvent;
-import org.snova.framework.event.gae.RequestSharedAppIDEvent;
-import org.snova.framework.event.gae.RequestSharedAppIDResultEvent;
+import org.snova.framework.event.gae.*;
 import org.snova.framework.proxy.RemoteProxyHandler;
 import org.snova.framework.proxy.RemoteProxyManager;
 import org.snova.framework.proxy.RemoteProxyManagerHolder;
-import org.snova.framework.proxy.c4.C4;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class GAE
 {
@@ -162,12 +156,6 @@ public class GAE
 		logger.info("GAE init.");
 		if (GAEConfig.appids.isEmpty())
 		{
-			if (C4.enable)
-			{
-				enable = false;
-				logger.warn("Failed to init GAE since none appid configured.");
-				return false;
-			}
 			GAEConfig.appids = fetchSharedAppIDs();
 		}
 		

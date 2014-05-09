@@ -3,15 +3,14 @@
  */
 package org.snova.framework.proxy.gae;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.arch.config.IniProperties;
 import org.arch.util.StringHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
-import org.snova.framework.proxy.c4.C4;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author wqy
@@ -46,7 +45,7 @@ public class GAEConfig
 			}
 			appids.add(auth);
 		}
-		if (appids.isEmpty() && (C4.enable))
+		if (appids.isEmpty())
 		{
 			return false;
 		}
