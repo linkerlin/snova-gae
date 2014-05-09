@@ -9,18 +9,15 @@
  */
 package org.snova.framework.util;
 
+import org.jboss.netty.bootstrap.ClientBootstrap;
+import org.jboss.netty.channel.*;
+import org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory;
+import org.snova.framework.trace.Trace;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
-
-import org.jboss.netty.bootstrap.ClientBootstrap;
-import org.jboss.netty.channel.ChannelPipeline;
-import org.jboss.netty.channel.ChannelPipelineFactory;
-import org.jboss.netty.channel.Channels;
-import org.jboss.netty.channel.SimpleChannelUpstreamHandler;
-import org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory;
-import org.snova.framework.trace.Trace;
 
 /**
  *
@@ -45,7 +42,16 @@ public class SharedObjectHelper
 				public ChannelPipeline getPipeline() throws Exception
 				{
 					ChannelPipeline p = Channels.pipeline();
-					p.addLast("empty", new SimpleChannelUpstreamHandler());
+					p.addLast("empty", new SimpleChannelUpstreamHandler(){
+                        public void exceptionCaught(
+                                ChannelHandlerContext ctx, ExceptionEvent e) throws Exception {
+                            if(e instanceof java.nio.channels.ClosedChannelException){
+                                // do nothing
+                            }else{
+                                super.exceptionCaught(ctx, e);
+                            }
+                        }
+                    });
 					return p;
 				}
 			});
