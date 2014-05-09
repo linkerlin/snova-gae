@@ -23,7 +23,11 @@ Dependencies
 Installing
 ----------
  Just unzip snova-[version].zip.
- 
+
+Running
+-------
+ 1) change folder to snova's root folder.
+ 2) run "bin/start.sh" in Terminal (bin/start.bat in Windows)
 
 
  

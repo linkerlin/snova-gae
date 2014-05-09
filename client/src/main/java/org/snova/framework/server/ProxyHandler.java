@@ -9,9 +9,26 @@
  */
 package org.snova.framework.server;
 
+import java.nio.channels.ClosedChannelException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.arch.util.NetworkHelper;
 import org.jboss.netty.buffer.ChannelBuffer;
-import org.jboss.netty.channel.*;
-import org.jboss.netty.handler.codec.http.*;
+import org.jboss.netty.channel.Channel;
+import org.jboss.netty.channel.ChannelFutureListener;
+import org.jboss.netty.channel.ChannelHandlerContext;
+import org.jboss.netty.channel.ChannelStateEvent;
+import org.jboss.netty.channel.ExceptionEvent;
+import org.jboss.netty.channel.MessageEvent;
+import org.jboss.netty.channel.SimpleChannelUpstreamHandler;
+import org.jboss.netty.handler.codec.http.HttpChunk;
+import org.jboss.netty.handler.codec.http.HttpHeaders;
+import org.jboss.netty.handler.codec.http.HttpMethod;
+import org.jboss.netty.handler.codec.http.HttpRequest;
+import org.jboss.netty.handler.codec.http.HttpResponse;
+import org.jboss.netty.handler.codec.http.HttpResponseStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.proxy.LocalProxyHandler;
@@ -19,11 +36,6 @@ import org.snova.framework.proxy.RemoteProxyHandler;
 import org.snova.framework.proxy.RemoteProxyManager;
 import org.snova.framework.proxy.spac.SPAC;
 import org.snova.framework.util.MiscHelper;
-
-import java.nio.channels.ClosedChannelException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author yinqiwen
@@ -195,7 +207,7 @@ public class ProxyHandler extends SimpleChannelUpstreamHandler implements
 			handleChunks(msg);
 		}
 	}
-	@Override
+	
 	public void handleResponse(RemoteProxyHandler remote, HttpResponse res)
 	{
 		if (null != localChannel && localChannel.isConnected())

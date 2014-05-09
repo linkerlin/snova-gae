@@ -3,33 +3,28 @@
  */
 package org.snova.framework.proxy.hosts;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Properties;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-
 import org.arch.config.IniProperties;
 import org.arch.dns.ResolveOptions;
 import org.arch.dns.Resolver;
 import org.arch.dns.exception.NamingException;
-import org.arch.misc.crypto.base64.Base64;
 import org.arch.util.ListSelector;
 import org.arch.util.StringHelper;
 import org.jboss.netty.handler.codec.http.HttpHeaders;
 import org.jboss.netty.handler.codec.http.HttpMethod;
 import org.jboss.netty.handler.codec.http.HttpRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
 import org.snova.framework.util.FileManager;
 import org.snova.framework.util.MiscHelper;
 import org.snova.framework.util.SharedObjectHelper;
+
+import java.io.*;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author yinqiwen
@@ -37,6 +32,8 @@ import org.snova.framework.util.SharedObjectHelper;
  */
 public class HostsService
 {
+    protected static Logger logger = LoggerFactory
+            .getLogger(HostsService.class);
 	private static Map<String, ListSelector<String>>	hostsMappingTable	= new HashMap<String, ListSelector<String>>();
 	private static int	                             enable	              = 1;
 	private static String[]	                         trustedDNS	          = new String[] {
@@ -45,8 +42,14 @@ public class HostsService
 	
 	private static void loadHostFile(String file)
 	{
-		InputStream is = HostsService.class.getResourceAsStream("/" + file);
-		Properties props = new Properties();
+        InputStream is = null;
+        try {
+            is = new FileInputStream(new File("conf/"+ file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            logger.error("Cannot load host file:"+new File("conf/"+ file).getAbsolutePath());
+        }
+        Properties props = new Properties();
 		try
 		{
 			props.load(is);

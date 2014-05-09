@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
 import org.snova.framework.proxy.RemoteProxyManager;
 import org.snova.framework.proxy.RemoteProxyManagerHolder;
+import org.snova.framework.proxy.c4.C4;
 import org.snova.framework.proxy.forward.ForwardRemoteProxyManager;
 import org.snova.framework.proxy.gae.GAE;
 import org.snova.framework.proxy.hosts.HostsService;
@@ -127,7 +128,10 @@ public class SPAC
 			{
 				return new RemoteProxyManager[] { new GAE.GAERemoteProxyManager() };
 			}
-
+			case C4:
+			{
+				return new RemoteProxyManager[] { new C4.C4RemoteProxyManager() };
+			}
 			default:
 			{
 				break;

@@ -9,8 +9,6 @@ import java.io.FileOutputStream;
 import java.util.Date;
 import java.util.Properties;
 
-import org.snova.framework.config.SnovaConfiguration;
-
 
 /**
  * @author qiyingwang
@@ -22,7 +20,7 @@ public class PreferenceHelper
 
 	static
 	{
-		File pref = new File(SnovaConfiguration.getHome(), ".pref");
+		File pref = new File("", ".pref");
 		if(null != pref)
 		{
 			try
@@ -42,7 +40,7 @@ public class PreferenceHelper
 	public static void savePreference(String key, String value)
 	{
 		prefProps.setProperty(key, value);
-		File pref = new File(SnovaConfiguration.getHome(), ".pref");
+		File pref = new File("", ".pref");
 		if (null != pref)
 		{
 			try

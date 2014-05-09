@@ -3,6 +3,11 @@
  */
 package org.snova.framework.util;
 
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.arch.config.IniProperties;
 import org.arch.util.NetworkHelper;
 import org.jboss.netty.handler.codec.http.HttpHeaders;
@@ -11,9 +16,8 @@ import org.jboss.netty.handler.codec.http.HttpRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
-
-import java.net.InetSocketAddress;
-import java.net.Proxy;
+import org.snova.http.client.HttpClientHelper;
+import org.snova.http.client.common.SimpleSocketAddress;
 
 /**
  * @author yinqiwen
@@ -59,11 +63,12 @@ public class MiscHelper
 			IniProperties cfg = SnovaConfiguration.getInstance()
 			        .getIniProperties();
 			String listen = cfg.getProperty("LocalServer", "Listen");
-            InetSocketAddress address = new InetSocketAddress(listen.split(":")[0], Integer.valueOf(listen.split(":")[1]));
+			SimpleSocketAddress address = HttpClientHelper
+			        .getHttpRemoteAddress(false, listen);
 			try
 			{
 				content = NetworkHelper.httpGet(url, new Proxy(Proxy.Type.HTTP,
-				        new InetSocketAddress(address.getHostString(), address.getPort())));
+				        new InetSocketAddress(address.host, address.port)));
 			}
 			catch (Exception e1)
 			{

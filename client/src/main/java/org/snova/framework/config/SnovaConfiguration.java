@@ -3,19 +3,14 @@
  */
 package org.snova.framework.config;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLDecoder;
-
 import org.arch.config.IniProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.common.Constants;
 import org.snova.framework.util.ReloadableFileMonitor;
 import org.snova.framework.util.ReloadableFileMonitorManager;
+
+import java.io.*;
 
 /**
  * @author wqy
@@ -32,16 +27,17 @@ public class SnovaConfiguration implements ReloadableFileMonitor
 
 	private static String home = null;
 
-	public static String getHome()
-	{
-		getInstance();
-		home = System.getProperty(Constants.APP_HOME);
-		if (null == home)
-		{
-			home = ".";
-		}
-		return home;
-	}
+//	public static String getHome()
+//	{
+//		getInstance();
+//		home = System.getProperty(Constants.APP_HOME);
+//		if (null == home)
+//		{
+//			home = ".";
+//		}
+//        System.out.println("App home:"+home);
+//		return home;
+//	}
 
 	private SnovaConfiguration()
 	{
@@ -62,25 +58,22 @@ public class SnovaConfiguration implements ReloadableFileMonitor
 
 	private static File getConfigFile()
 	{
-		URL url = SnovaConfiguration.class.getResource("/"
-		        + Constants.CONF_FILE);
-		String conf;
-		try
-		{
-			conf = URLDecoder.decode(url.getFile(), "UTF-8");
-		}
-		catch (UnsupportedEncodingException e)
-		{
-			return null;
-		}
-		return new File(conf);
+        File confile=new File("conf/"+Constants.CONF_FILE);
+//        System.out.println("confile:"+confile.getAbsolutePath());
+
+		return confile;
 	}
 
 	private void loadConfig()
 	{
-		InputStream is = SnovaConfiguration.class.getResourceAsStream("/"
-		        + Constants.CONF_FILE);
-		props = new IniProperties();
+        InputStream is = null;
+        try {
+            is = new FileInputStream(getConfigFile());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            logger.error("Cannot load config file:"+getConfigFile().getAbsolutePath());
+        }
+        props = new IniProperties();
 		if (null != is)
 		{
 			try

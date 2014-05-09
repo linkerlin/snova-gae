@@ -3,14 +3,13 @@
  */
 package org.snova.framework.util;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-
 import org.arch.util.FileHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.snova.framework.config.SnovaConfiguration;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * @author yinqiwen
@@ -28,8 +27,6 @@ public class FileManager
 	
 	public static void writeFile(byte[] content, String file)
 	{
-		String home = SnovaConfiguration.getHome();
-		file = home + "/" + file;
 		try
 		{
 			FileOutputStream fos = new FileOutputStream(file);
@@ -43,8 +40,6 @@ public class FileManager
 	
 	public static String loadFile(String file)
 	{
-		String home = SnovaConfiguration.getHome();
-		file = home + "/" + file;
 		try
 		{
 			return FileHelper.readEntireFile(new File(file));

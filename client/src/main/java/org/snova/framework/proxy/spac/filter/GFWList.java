@@ -4,10 +4,7 @@
 package org.snova.framework.proxy.spac.filter;
 
 import org.arch.config.IniProperties;
-import org.jboss.netty.handler.codec.http.DefaultHttpRequest;
-import org.jboss.netty.handler.codec.http.HttpMethod;
 import org.jboss.netty.handler.codec.http.HttpRequest;
-import org.jboss.netty.handler.codec.http.HttpVersion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
@@ -43,10 +40,6 @@ public class GFWList extends SpacFilter
 	{
 		return instance;
 	}
-
-    public boolean isBlockedByGFW(String url){
-        return filter(new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, url));
-    }
 	
 	@Override
 	public boolean filter(HttpRequest req)
@@ -247,6 +240,6 @@ public class GFWList extends SpacFilter
 		{
 			logger.error("Failed to generate PAC.", e);
 		}
-		FileManager.writeFile(template, "spac/snova-gfwlist.pac");
+		FileManager.writeFile(template, "conf/snova-gfwlist.pac");
 	}
 }

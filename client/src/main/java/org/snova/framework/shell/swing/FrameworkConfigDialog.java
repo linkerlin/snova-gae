@@ -11,17 +11,21 @@
 
 package org.snova.framework.shell.swing;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.DefaultComboBoxModel;
+
 import org.arch.config.IniProperties;
+import org.arch.event.EventDispatcher;
+import org.arch.event.NamedEventHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
 import org.snova.framework.proxy.spac.SPAC;
 import org.snova.framework.util.PreferenceHelper;
-
-import javax.swing.*;
-import java.net.InetSocketAddress;
-import java.util.ArrayList;
-import java.util.List;
+import org.snova.http.client.HttpClientHelper;
+import org.snova.http.client.common.SimpleSocketAddress;
 
 /**
  * 
@@ -50,16 +54,15 @@ public class FrameworkConfigDialog extends javax.swing.JDialog
 	private void setDefaultValueFromConfig()
 	{
 		IniProperties cfg = SnovaConfiguration.getInstance().getIniProperties();
-        ;
-        InetSocketAddress addr = new InetSocketAddress(cfg.getProperty("LocalServer", "Listen").split(":")[0],
-                Integer.valueOf(cfg.getProperty("LocalServer", "Listen").split(":")[1]));
-
-		localServerHostText.setText(addr.getHostString());
-		localServerPortText.setText("" + addr.getPort());
+		SimpleSocketAddress addr = HttpClientHelper.getHttpRemoteAddress(false,
+		        cfg.getProperty("LocalServer", "Listen"));
+		localServerHostText.setText(addr.host);
+		localServerPortText.setText("" + addr.port);
 		tpTextField.setText("20");
 		
 		List<String> serviceNames = new ArrayList<String>();
 		serviceNames.add("GAE");
+		serviceNames.add("C4");
 		serviceNames.add("SPAC");
 		// for (NamedEventHandler handler :
 		// EventDispatcher.getSingletonInstance()

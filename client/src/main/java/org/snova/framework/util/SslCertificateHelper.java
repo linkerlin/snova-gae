@@ -9,39 +9,6 @@
  */
 package org.snova.framework.util;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.math.BigInteger;
-import java.security.InvalidKeyException;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.KeyStore;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.SecureRandom;
-import java.security.Security;
-import java.security.SignatureException;
-import java.security.cert.Certificate;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Vector;
-import java.util.WeakHashMap;
-
-import javax.net.ssl.KeyManagerFactory;
-import javax.net.ssl.SSLContext;
-import javax.security.auth.x500.X500Principal;
-
 import org.bouncycastle.asn1.x509.BasicConstraints;
 import org.bouncycastle.asn1.x509.X509Extensions;
 import org.bouncycastle.asn1.x509.X509Name;
@@ -55,7 +22,17 @@ import org.bouncycastle.x509.extension.AuthorityKeyIdentifierStructure;
 import org.bouncycastle.x509.extension.SubjectKeyIdentifierStructure;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.snova.framework.config.SnovaConfiguration;
+
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import javax.security.auth.x500.X500Principal;
+import java.io.*;
+import java.math.BigInteger;
+import java.security.*;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+import java.util.*;
 
 /**
  *
@@ -107,7 +84,7 @@ public class SslCertificateHelper
 
 	private static File getFakeSSLCertFile(String host)
 	{
-		File confhome = new File(SnovaConfiguration.getHome(), "cert");
+		File confhome = new File("cert");
 		if (!confhome.exists())
 		{
 			confhome.mkdir();
@@ -129,7 +106,7 @@ public class SslCertificateHelper
 			{
 				KeyStore ks = KeyStore.getInstance("JKS");
 				FileInputStream fis = new FileInputStream(new File(
-				        SnovaConfiguration.getHome() + "/cert",
+				        "cert",
 				        "RootKeyStore.kst"));
 				ks.load(fis, KS_PASS.toCharArray());
 				caCert = (X509Certificate) ks.getCertificate(CA_ALIAS);

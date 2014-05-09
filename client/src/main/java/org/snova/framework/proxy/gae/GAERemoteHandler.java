@@ -3,8 +3,21 @@
  */
 package org.snova.framework.proxy.gae;
 
-import com.sun.jdi.connect.Connector;
-import com.sun.jdi.connect.Transport;
+import java.net.InetSocketAddress;
+import java.net.URL;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLEngine;
+
 import org.arch.buffer.Buffer;
 import org.arch.common.KeyValuePair;
 import org.arch.config.IniProperties;
@@ -15,6 +28,8 @@ import org.arch.event.http.HTTPErrorEvent;
 import org.arch.event.http.HTTPEventContants;
 import org.arch.event.http.HTTPRequestEvent;
 import org.arch.event.http.HTTPResponseEvent;
+import org.arch.event.misc.CompressEvent;
+import org.arch.event.misc.CompressorType;
 import org.arch.event.misc.EncryptEvent;
 import org.arch.event.misc.EncryptType;
 import org.arch.util.StringHelper;
@@ -22,8 +37,18 @@ import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.channel.ChannelFuture;
 import org.jboss.netty.channel.ChannelFutureListener;
+import org.jboss.netty.channel.DefaultChannelFuture;
 import org.jboss.netty.channel.socket.SocketChannel;
-import org.jboss.netty.handler.codec.http.*;
+import org.jboss.netty.handler.codec.http.DefaultHttpChunk;
+import org.jboss.netty.handler.codec.http.DefaultHttpRequest;
+import org.jboss.netty.handler.codec.http.DefaultHttpResponse;
+import org.jboss.netty.handler.codec.http.HttpChunk;
+import org.jboss.netty.handler.codec.http.HttpHeaders;
+import org.jboss.netty.handler.codec.http.HttpMethod;
+import org.jboss.netty.handler.codec.http.HttpRequest;
+import org.jboss.netty.handler.codec.http.HttpResponse;
+import org.jboss.netty.handler.codec.http.HttpResponseStatus;
+import org.jboss.netty.handler.codec.http.HttpVersion;
 import org.jboss.netty.handler.ssl.SslHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,20 +60,22 @@ import org.snova.framework.event.EventHeaderTags;
 import org.snova.framework.event.EventHelper;
 import org.snova.framework.proxy.LocalProxyHandler;
 import org.snova.framework.proxy.RemoteProxyHandler;
+import org.snova.framework.proxy.common.RangeChunk;
+import org.snova.framework.proxy.common.RangeFetchStatus;
 import org.snova.framework.proxy.hosts.HostsService;
 import org.snova.framework.proxy.range.MultiRangeFetchTask;
 import org.snova.framework.proxy.range.RangeCallback;
 import org.snova.framework.util.SharedObjectHelper;
 import org.snova.framework.util.SslCertificateHelper;
-
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLEngine;
-import java.net.InetSocketAddress;
-import java.net.URL;
-import java.security.NoSuchAlgorithmException;
-import java.util.List;
-import java.util.Map;
-
+import org.snova.http.client.Connector;
+import org.snova.http.client.FutureCallback;
+import org.snova.http.client.HttpClient;
+import org.snova.http.client.HttpClientException;
+import org.snova.http.client.HttpClientHandler;
+import org.snova.http.client.HttpClientHelper;
+import org.snova.http.client.Options;
+import org.snova.http.client.ProxyCallback;
+import org.snova.http.client.common.SimpleSocketAddress;
 
 /**
  * @author wqy
@@ -65,8 +92,8 @@ public class GAERemoteHandler implements RemoteProxyHandler, EventHandler,
 	private GAEServerAuth gaeAuth;
 	private LocalProxyHandler local;
 	private HTTPRequestEvent proxyRequest;
-//	private Set<HttpClientHandler> workingHttpClientHandlers = Collections
-//	        .synchronizedSet(new HashSet<HttpClientHandler>());
+	private Set<HttpClientHandler> workingHttpClientHandlers = Collections
+	        .synchronizedSet(new HashSet<HttpClientHandler>());
 	private MultiRangeFetchTask rangeTask = null;
 	private boolean closed = false;
 	boolean injectRange = false;
@@ -135,27 +162,7 @@ public class GAERemoteHandler implements RemoteProxyHandler, EventHandler,
 					}
 					return future;
 				}
-
-                @Override
-                public String name() {
-                    return null;
-                }
-
-                @Override
-                public String description() {
-                    return null;
-                }
-
-                @Override
-                public Transport transport() {
-                    return null;
-                }
-
-                @Override
-                public Map<String, Argument> defaultArguments() {
-                    return null;
-                }
-            };
+			};
 		}
 		client = new HttpClient(options,
 		        SharedObjectHelper.getClientBootstrap());
@@ -391,14 +398,14 @@ public class GAERemoteHandler implements RemoteProxyHandler, EventHandler,
 	@Override
 	public void close()
 	{
-//		synchronized (workingHttpClientHandlers)
-//		{
-//			for (HttpClientHandler ch : workingHttpClientHandlers)
-//			{
-//				ch.closeChannel();
-//			}
-//			workingHttpClientHandlers.clear();
-//		}
+		synchronized (workingHttpClientHandlers)
+		{
+			for (HttpClientHandler ch : workingHttpClientHandlers)
+			{
+				ch.closeChannel();
+			}
+			workingHttpClientHandlers.clear();
+		}
 		if (null != rangeTask)
 		{
 			rangeTask.close();
@@ -539,7 +546,7 @@ public class GAERemoteHandler implements RemoteProxyHandler, EventHandler,
 			request.setContent(ChannelBuffers.wrappedBuffer(buf.getRawBuffer(),
 			        buf.getReadIndex(), buf.readableBytes()));
 			HttpClientHandler h = client.execute(request, cb);
-//			workingHttpClientHandlers.add(h);
+			workingHttpClientHandlers.add(h);
 			cb.httpHandler = h;
 		}
 		catch (HttpClientException e)
@@ -579,7 +586,7 @@ public class GAERemoteHandler implements RemoteProxyHandler, EventHandler,
 		{
 			if (null != httpHandler)
 			{
-//				workingHttpClientHandlers.remove(httpHandler);
+				workingHttpClientHandlers.remove(httpHandler);
 				httpHandler = null;
 			}
 		}

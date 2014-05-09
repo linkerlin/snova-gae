@@ -12,6 +12,7 @@ import org.snova.framework.event.gae.*;
 import org.snova.framework.proxy.RemoteProxyHandler;
 import org.snova.framework.proxy.RemoteProxyManager;
 import org.snova.framework.proxy.RemoteProxyManagerHolder;
+import org.snova.framework.proxy.c4.C4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -156,6 +157,12 @@ public class GAE
 		logger.info("GAE init.");
 		if (GAEConfig.appids.isEmpty())
 		{
+			if (C4.enable)
+			{
+				enable = false;
+				logger.warn("Failed to init GAE since none appid configured.");
+				return false;
+			}
 			GAEConfig.appids = fetchSharedAppIDs();
 		}
 		
@@ -165,6 +172,10 @@ public class GAE
 			{
 				servers.add(server);
 			}
+            else
+            {
+                logger.error("GAE server auth failed."+server.toString());
+            }
 		}
 		if (servers.size() == 0)
 		{

@@ -4,7 +4,7 @@
  *
  * Description: RequestSharedAppIDEvent.java 
  *
- * @author yinqiwen [ 2011-12-7 | обнГ10:18:10 ]
+ * @author yinqiwen :18:10 ]
  *
  */
 package org.snova.framework.event.gae;
