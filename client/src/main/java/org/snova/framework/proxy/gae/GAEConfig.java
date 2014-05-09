@@ -33,7 +33,7 @@ public class GAEConfig
 		}
 		for (int i = 0;; i++)
 		{
-			String v = cfg.getProperty("GAE", "WorkerNode[" + i + "]");
+			String v = cfg.getProperty("GAE", "WorkerNode" + i + "");
 			if (null == v || v.length() == 0)
 			{
 				break;

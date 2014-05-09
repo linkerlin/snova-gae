@@ -32,7 +32,7 @@ public class C4Config
 		}
 		for (int i = 0;; i++)
 		{
-			String v = cfg.getProperty("C4", "WorkerNode[" + i + "]");
+			String v = cfg.getProperty("C4", "WorkerNode" + i + "");
 			if (null == v || v.length() == 0)
 			{
 				break;
