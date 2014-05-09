@@ -23,6 +23,7 @@ Dependencies
 2. You need to install Google App Engine SDK(Java/GO) (use the latest version)
 
 INSTALL:
-Please refer http://snova.googlecode.com  for more information.
+mvn clean install
+mvn appengine:update
 
  
