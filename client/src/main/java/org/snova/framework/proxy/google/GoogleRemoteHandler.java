@@ -3,32 +3,11 @@
  */
 package org.snova.framework.proxy.google;
 
-import java.net.InetSocketAddress;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.security.NoSuchAlgorithmException;
-import java.util.Map;
-
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLEngine;
-
 import org.arch.config.IniProperties;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
-import org.jboss.netty.channel.ChannelFuture;
-import org.jboss.netty.channel.ChannelFutureListener;
-import org.jboss.netty.channel.ChannelHandlerContext;
-import org.jboss.netty.channel.ChannelPipeline;
-import org.jboss.netty.channel.ChannelStateEvent;
-import org.jboss.netty.channel.DefaultChannelFuture;
-import org.jboss.netty.channel.MessageEvent;
-import org.jboss.netty.channel.SimpleChannelUpstreamHandler;
-import org.jboss.netty.handler.codec.http.HttpChunk;
-import org.jboss.netty.handler.codec.http.HttpHeaders;
-import org.jboss.netty.handler.codec.http.HttpMethod;
-import org.jboss.netty.handler.codec.http.HttpRequest;
-import org.jboss.netty.handler.codec.http.HttpRequestEncoder;
-import org.jboss.netty.handler.codec.http.HttpResponse;
+import org.jboss.netty.channel.*;
+import org.jboss.netty.handler.codec.http.*;
 import org.jboss.netty.handler.ssl.SslHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,12 +17,15 @@ import org.snova.framework.proxy.RemoteProxyHandler;
 import org.snova.framework.proxy.hosts.HostsService;
 import org.snova.framework.server.ProxyHandler;
 import org.snova.framework.util.SharedObjectHelper;
-import org.snova.http.client.Connector;
-import org.snova.http.client.FutureCallback;
-import org.snova.http.client.HttpClient;
-import org.snova.http.client.HttpClientHandler;
-import org.snova.http.client.Options;
-import org.snova.http.client.ProxyCallback;
+import org.snova.http.client.*;
+
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLEngine;
+import java.net.InetSocketAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.security.NoSuchAlgorithmException;
+import java.util.Map;
 
 /**
  * @author wqy
@@ -254,6 +236,14 @@ public class GoogleRemoteHandler implements RemoteProxyHandler
 			proxyTunnel.getChannel().getPipeline()
 			        .addLast("Forward", new SimpleChannelUpstreamHandler()
 			        {
+                        public void exceptionCaught(
+                                ChannelHandlerContext ctx, ExceptionEvent e) throws Exception {
+                            if(e instanceof java.nio.channels.ClosedChannelException){
+                                // do nothing
+                            }else{
+                                super.exceptionCaught(ctx, e);
+                            }
+                        }
 				        public void channelClosed(ChannelHandlerContext ctx,
 				                ChannelStateEvent e) throws Exception
 				        {
