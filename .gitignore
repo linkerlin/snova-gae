@@ -4,3 +4,5 @@
 .idea/
 target/
 snova.jar
+.idea
+/.idea/
