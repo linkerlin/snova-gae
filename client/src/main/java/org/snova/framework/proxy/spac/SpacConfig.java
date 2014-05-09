@@ -11,6 +11,7 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.config.SnovaConfiguration;
+import org.snova.framework.proxy.c4.C4;
 import org.snova.framework.proxy.gae.GAE;
 
 import java.io.File;
@@ -83,6 +84,10 @@ public class SpacConfig
 			{
 				defaultProxy = "GAE";
 			}
+            else if (C4.enable)
+            {
+                defaultProxy = "C4";
+            }
 			else
 			{
 				defaultProxy = "Direct";
