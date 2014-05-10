@@ -3,25 +3,24 @@
  */
 package org.snova.framework.proxy.forward;
 
+import com.ning.http.client.*;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.channel.*;
 import org.jboss.netty.handler.codec.http.HttpChunk;
 import org.jboss.netty.handler.codec.http.HttpMethod;
 import org.jboss.netty.handler.codec.http.HttpRequest;
-import org.jboss.netty.handler.codec.http.HttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snova.framework.proxy.LocalProxyHandler;
 import org.snova.framework.proxy.RemoteProxyHandler;
 import org.snova.framework.proxy.hosts.HostsService;
 import org.snova.framework.server.ProxyHandler;
+import org.snova.framework.util.ObjectConverter;
 import org.snova.framework.util.SharedObjectHelper;
-import org.snova.http.client.FutureCallback;
-import org.snova.http.client.HttpClient;
-import org.snova.http.client.HttpClientException;
 import org.snova.http.client.HttpClientHandler;
 
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.URL;
 import java.util.Map;
@@ -34,7 +33,8 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 {
 	protected static Logger	  logger	= LoggerFactory
 	                                         .getLogger(ForwardRemoteHandler.class);
-	private static HttpClient	directHttpClient;
+//	private static HttpClient	directHttpClient;
+    private AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
 	
 	private LocalProxyHandler	localHandler;
 	private HttpClientHandler	proxyClientHandler;
@@ -43,12 +43,12 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 	
 	private static void initHttpClient() throws Exception
 	{
-		if (null != directHttpClient)
-		{
-			return;
-		}
-		directHttpClient = new HttpClient(null,
-		        SharedObjectHelper.getClientBootstrap());
+//		if (null != directHttpClient)
+//		{
+//			return;
+//		}
+//		directHttpClient = new HttpClient(null,
+//		        SharedObjectHelper.getClientBootstrap());
 	}
 	
 	public ForwardRemoteHandler(Map<String, String> attrs)
@@ -58,6 +58,7 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 			initHttpClient();
 			for (String attr : attrs.keySet())
 			{
+                // TODO: https support???
 				if (attr.startsWith("http://") || attr.startsWith("socks://"))
 				{
 					targetAddress = new URL(attr);
@@ -66,8 +67,8 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 		}
 		catch (Exception e)
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+            logger.error("ForwardRemoteHandler init failed."+e.getMessage());
 		}
 		
 	}
@@ -85,7 +86,7 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 			String host = address;
 			final String x = host;
 			int port = 443;
-			if (address.indexOf(":") != -1)
+			if (address.contains(":"))
 			{
 				host = address.split(":")[0];
 				port = Integer.parseInt(address.split(":")[1]);
@@ -144,37 +145,84 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 		}
 		else
 		{
-			try
-			{
-				proxyClientHandler = directHttpClient.execute(req,
-				        new FutureCallback.FutureCallbackAdapter()
-				        {
-					        public void onResponse(HttpResponse res)
-					        {
-						        local.handleResponse(ForwardRemoteHandler.this,
-						                res);
-					        }
-					        
-					        public void onBody(HttpChunk chunk)
-					        {
-						        local.handleChunk(ForwardRemoteHandler.this,
-						                chunk);
-					        }
-					        
-					        public void onError(String error)
-					        {
-						        close();
-						        local.onProxyFailed(ForwardRemoteHandler.this,
-						                req);
-					        }
-				        });
-			}
-			catch (HttpClientException e)
-			{
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+            try {
+                asyncHttpClient.prepareRequest(ObjectConverter.convert(req)).execute(new AsyncHandler<Response>() {
+                    private final Response.ResponseBuilder builder = new Response.ResponseBuilder();
+
+                    /**
+                     * Invoked when an unexpected exception occurs during the processing of the response. The exception may have been
+                     * produced by implementation of onXXXReceived method invocation.
+                     *
+                     * @param t a {@link Throwable}
+                     */
+                    @Override
+                    public void onThrowable(Throwable t) {
+                        local.onProxyFailed(ForwardRemoteHandler.this,
+                                req);
+                        logger.error("asyncHttpClient error:"+t.getMessage());
+                    }
+
+                    /**
+                     * Invoked as soon as some response body part are received. Could be invoked many times.
+                     *
+                     * @param bodyPart response's body part.
+                     * @return a {@link com.ning.http.client.AsyncHandler.STATE} telling to CONTINUE or ABORT the current processing.
+                     * @throws Exception if something wrong happens
+                     */
+                    @Override
+                    public STATE onBodyPartReceived(final HttpResponseBodyPart bodyPart) throws Exception {
+                        builder.accumulate(bodyPart);
+                        return STATE.CONTINUE;
+                    }
+
+                    /**
+                     * Invoked as soon as the HTTP status line has been received
+                     *
+                     * @param responseStatus the status code and test of the response
+                     * @return a {@link com.ning.http.client.AsyncHandler.STATE} telling to CONTINUE or ABORT the current processing.
+                     * @throws Exception if something wrong happens
+                     */
+                    @Override
+                    public STATE onStatusReceived(final HttpResponseStatus responseStatus) throws Exception {
+                        builder.accumulate(responseStatus);
+                        return STATE.CONTINUE;
+                    }
+
+                    /**
+                     * Invoked as soon as the HTTP headers has been received. Can potentially be invoked more than once if a broken server
+                     * sent trailing headers.
+                     *
+                     * @param headers the HTTP headers.
+                     * @return a {@link com.ning.http.client.AsyncHandler.STATE} telling to CONTINUE or ABORT the current processing.
+                     * @throws Exception if something wrong happens
+                     */
+                    @Override
+                    public STATE onHeadersReceived(HttpResponseHeaders headers) throws Exception {
+                        builder.accumulate(headers);
+                        return STATE.CONTINUE;
+                    }
+
+                    /**
+                     * Invoked once the HTTP response processing is finished.
+                     * <p/>
+                     * <p/>
+                     * Gets always invoked as last callback method.
+                     *
+                     * @return T Value that will be returned by the associated {@link java.util.concurrent.Future}
+                     * @throws Exception if something wrong happens
+                     */
+                    @Override
+                    public Response onCompleted() throws Exception {
+                        Response response = builder.build();
+                        local.handleResponse(ForwardRemoteHandler.this,
+                                ObjectConverter.convert(response));
+                        return response;
+                    }
+                });
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 		
 	}
 	
@@ -208,27 +256,28 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 	@Override
 	public void close()
 	{
-		if (null != proxyClientHandler)
-		{
-			proxyClientHandler.closeChannel();
-			proxyClientHandler = null;
-		}
-		if (null != proxyTunnel && proxyTunnel.getChannel().isOpen())
-		{
-			proxyTunnel.getChannel().close();
-		}
-		proxyTunnel = null;
+        asyncHttpClient.close();
+//		if (null != proxyClientHandler)
+//		{
+//			proxyClientHandler.closeChannel();
+//			proxyClientHandler = null;
+//		}
+//		if (null != proxyTunnel && proxyTunnel.getChannel().isOpen())
+//		{
+//			proxyTunnel.getChannel().close();
+//		}
+//		proxyTunnel = null;
 
 	}
 	
 	private void doClose()
 	{
 		close();
-		if (null != localHandler)
-		{
-			localHandler.close();
-			localHandler = null;
-		}
+//		if (null != localHandler)
+//		{
+//			localHandler.close();
+//			localHandler = null;
+//		}
 	}
 	
 	@Override
