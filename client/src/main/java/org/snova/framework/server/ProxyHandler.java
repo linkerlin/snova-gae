@@ -115,7 +115,7 @@ public class ProxyHandler extends SimpleChannelUpstreamHandler implements
 			boolean match = false;
 			for (RemoteProxyManager rm : candidateProxyManager)
 			{
-				if (rm.getName().equalsIgnoreCase(remoteHandler.getName()))
+				if (rm!=null && rm.getName().equalsIgnoreCase(remoteHandler.getName()))
 				{
 					match = true;
 					break;

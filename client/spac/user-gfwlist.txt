@@ -5,3 +5,4 @@ www.voachinese.com
 *.google.com.*
 *.google.com
 *.googlecode.com
+*.twimg.com

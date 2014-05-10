@@ -3805,6 +3805,7 @@ function FindProxyForURL(url, host) {
 	if(/\.google\.com\./i.test(url)) return PROXY;
 	if(/\.google\.com/i.test(url)) return PROXY;
 	if(/\.googlecode\.com/i.test(url)) return PROXY;
+	if(/\.twimg\.com/i.test(url)) return PROXY;
 	
    //-- END OF AUTO-GENERATED RULES
 	
