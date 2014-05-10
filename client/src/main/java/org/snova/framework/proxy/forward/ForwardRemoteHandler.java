@@ -256,6 +256,7 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 	@Override
 	public void close()
 	{
+        asyncHttpClient.close();
 //		if (null != proxyClientHandler)
 //		{
 //			proxyClientHandler.closeChannel();
@@ -271,7 +272,7 @@ public class ForwardRemoteHandler implements RemoteProxyHandler
 	
 	private void doClose()
 	{
-//		close();
+		close();
 //		if (null != localHandler)
 //		{
 //			localHandler.close();
